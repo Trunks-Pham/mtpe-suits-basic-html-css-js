@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <TItle>Đăng Ký Thành Viên MTPE SUITS</TItle>
+    <link rel="stylesheet" href="../CSS/dangky.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        
+        <header class="header">
+            <figure class="logo">
+                <img src="../Images/logo.jpg" alt="MTPE SUITS">
+            </figure>
+        
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html">TRANG CHỦ</a></li>
+                    <li><a href="../HTML/camon.html">MAY ĐO ONLINE</a></li>
+                    <li><a href="../HTML/sanpham.html">SẢN PHẨM</a></li>
+                    <li><a href="../HTML/camon.html">TÌM HIỂU</a></li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li><a href="../HTML/dangky.html">TÀI KHOẢN</a></li>
+                    <li><a href="../HTML/giohang.html">GIỎ HÀNG</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--MAIN-->
+        <main class="main">
+            <form id="registrationForm">
+                <h2 style="text-align: center;">Đăng Ký Tài Khoản</h2><br><br>
+
+                <label for="name">Họ & tên:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="password1">Mật khẩu lần 1:</label>
+                <input type="password" id="password1" name="password1" required><br>
+
+                <label for="password2">Mật khẩu lần 2:</label>
+                <input type="password" id="password2" name="password2" required><span id="message"></span><br>
+
+                <button type="submit" id="registerButton"><h3>Đăng Ký Tài Khoản</h3></button><br>
+                <div style="display: flex; align-items: center;">
+
+                    <p>Hoặc</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="Sigins" id="Sigin"><h4>Đăng Nhập</h4></button>&nbsp;&nbsp;
+                    <img src="../Images/google.png" height="35" width="auto">&nbsp;&nbsp;
+                    <img src="../Images/facebook.png" height="35" width="auto"><br><br><br>
+                </div>
+            </form>
+        </main>
+        
+        <footer class="Footer">
+            <section class="address">
+                <br><br><h3>ĐỊA CHỈ CỦA HÀNG MTPE SUITS</h3>
+                <ul>
+                    <li> <b>Văn phòng đại diện & Showroom 1:</b><br>&ensp;&ensp;&ensp;P.Thảo Điền, TP Thủ Đức, TPHCM</li>
+                    <li><b>Điện thoại:</b> 091234567</li>
+                    <li><b>Showroom 2:</b> Phường Tân Định,<br>&ensp;&ensp;&ensp;Quận 1, TP.HCM</li>
+                    <li><b>Email:</b> hello@mtpesuits.com</li>
+                    <li><b>Thời gian làm việc:</b> Thứ 2 - Chủ Nhật:<br>&ensp;&ensp;&ensp;12:00 PM - 21:30 PM</li>
+                </ul>
+            </section>
+        
+            <section class="policies"><br>
+                <br><h3>CHÍNH SÁCH CỦA MTPE SUITS</h3>
+                
+                    <li><a href="#">Chính sách chăm sóc khách hàng</a></li>
+                    <li><a href="#">Chính sách hậu mãi</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+               
+            </section>
+        
+            <section class="newsletter">
+                <form>
+                    <br><h3>ĐĂNG KÝ NHẬN TIN</h3>
+                    <p>Để nhận được tin tức khuyến mãi mới nhất <br>từ MTPE SUITS</p>
+                    <div style="display: flex;">
+                        <input type="email" placeholder="Nhập email của bạn">
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="social-media"><br>
+                        <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <a href="#Facebook"> <img src="../Images/facebook.png" height=25> </i></a>
+                        <a href="#Instagram"> <img src="../Images/instag.jpg" height=25> </i></a>
+                        <a href="#Youtube"> <img src="../Images/youtube.jpg" height=25> </i></a>
+                        <a href="#Shopee"> <img src="../Images/shopee.png" height=25> </i></a>
+                        <a href="#Tiktok"> <img src="../Images/tiktok.jpg" height=25> </i></a>
+                    </div>
+                </form>
+            </section>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="../JS/dangky.js"></script>
+</body>
+</html>

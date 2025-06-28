@@ -1,0 +1,305 @@
+.container {
+    width: 100%; 
+    margin: 0 auto; 
+    padding-top: 100px;
+  } 
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    height: 100px;
+    background-color: #f0f0f0; 
+    padding: 0 150px;
+  }
+
+.logo img {
+  height: 150px; 
+  width: auto; 
+}
+
+.header.small .logo img {
+  height: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none; 
+  display: flex; 
+}
+
+.nav ul li {
+  margin: 0 10px; 
+}
+
+.nav ul li a {
+  text-decoration: none; 
+  color: #333; 
+  font-weight: bold; 
+}
+
+.nav ul li a:hover {
+  color: #b08401; 
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+}
+
+.header.small {
+  height: 70px;
+}
+
+.header.small .nav {
+  display: none;
+}
+
+  
+  /*FOOTER*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .address h3,
+  .policies h3,
+  .newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  .address p {
+    margin: 0;
+  }
+  
+  .policies ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .policies li {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input[type="email"] {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .newsletter button[type="submit"] {
+    margin-left: 20px; 
+    background-color: #b08401;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px; 
+    font-weight: bold;
+  } 
+  
+  .newsletter button[type="submit"]:hover {
+    background-color: #8e6b00;
+  } 
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media i {
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-media i:hover {
+    color: #111;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu, .main, .right, .address, .policies, .newsletter, .social-media {
+      width: 100%;
+    }
+  }
+  
+  /*MAIN*/
+
+#registrationForm input[type="text"],
+#registrationForm input[type="tel"],
+#registrationForm input[type="email"],
+#registrationForm input[type="password"] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(227, 227, 227);
+    color: black;
+    border-radius: 5px;
+}
+
+#registrationForm input[type="text"]:focus,
+#registrationForm input[type="tel"]:focus,
+#registrationForm input[type="email"]:focus,
+#registrationForm input[type="password"]:focus {
+    background-color: white;
+    color: black;
+}
+
+#registrationForm button {
+    background-color: #a07901;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    border-radius: 5px;
+}
+
+#registrationForm button:hover {
+    opacity: 0.8;
+    background-color: #8e6b00;
+} 
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#registrationForm {
+    text-align: left;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+@media screen and (max-width: 600px) {
+    #registrationForm input[type="text"],
+    #registrationForm input[type="tel"],
+    #registrationForm input[type="email"],
+    #registrationForm input[type="password"],
+    #registrationForm button {
+        width: 100%;
+    }
+}
+
+.alertBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; 
+}
+
+.alertContent {
+    text-align: center;
+}
+
+.closeButton {
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    padding: 10px;
+    border: none;
+    background-color: #a07901;
+    color: #fff;
+    cursor: pointer;
+}
+
+#registrationForm #Sigin {
+    background-color: white; 
+    color:  black; 
+    padding: 14px 20px;
+    margin: 8px 0; 
+    border: 2px solid black;
+    cursor: pointer; 
+    width: 150px; 
+    height: 45px;
+    opacity: 0.9; 
+}
+
+#registrationForm #Sigin:hover {
+    opacity:1;
+    background-color:#967410;
+    color: white;
+}
+
+#registrationForm #Sigin:active {
+  background-color: #8e6b00; 
+  box-shadow: 0 5px #6e5300;
+  transform: translateY(4px);
+}
+
+@media only screen and (max-width: 600px) {
+    div {
+        flex-direction: column;
+    }
+    p, button, img {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    div {
+        flex-direction: row;
+    }
+    p, button, img {
+        margin-right: 10px;
+    }
+}
+
+#registrationForm h2 {
+  margin-top: 150px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}

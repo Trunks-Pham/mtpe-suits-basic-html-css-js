@@ -1,0 +1,188 @@
+.container {
+    width: 100%; 
+    margin: 0 auto; 
+    padding-top: 100px;
+  } 
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex; 
+      align-items: center;
+      justify-content: space-between; 
+      height: 100px;
+      background-color: #f0f0f0; 
+      padding: 0 150px;
+    }
+    
+  .logo img {
+    height: 150px; 
+    width: auto; 
+  }
+  
+  .header.small .logo img {
+    height: 100px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .nav ul {
+    list-style: none; 
+    display: flex; 
+  }
+  
+  .nav ul li {
+    margin: 0 10px; 
+  }
+  
+  .nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+  }
+  
+  .nav ul li a:hover {
+    color: #b08401; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+    }
+    
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  .header.small {
+    height: 70px;
+  }
+  
+  .header.small .nav {
+    display: none;
+  }
+  
+  /*FOOTER*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .address h3,
+  .policies h3,
+  .newsletter h3 {
+    margin-bottom: 10px;
+  }
+  
+  .address p {
+    margin: 0;
+  }
+  
+  .policies ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .policies li {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input[type="email"] {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .newsletter button[type="submit"] {
+    margin-left: 20px; 
+    background-color: #b08401;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px; 
+    font-weight: bold;
+  } 
+  
+  .newsletter button[type="submit"]:hover {
+    background-color: #8e6b00;
+  } 
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media i {
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-media i:hover {
+    color: #111;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu, .main, .right, .address, .policies, .newsletter, .social-media {
+      width: 100%;
+    }
+  }
+  
+  /*MAIN*/
+  
+  .sanpham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 100px;
+    
+    flex: 1 0 30%;
+    margin: 5px;
+}
+
+#myImage:hover {
+  transform: scale(1.2);
+  transition: transform .2s;
+}
+
+@media screen and (max-width: 600px) {
+  .sanpham div {
+      flex: 1 0 100%;
+  }
+}
+
+.centered {
+  padding-left: 150px;
+}
+
+.sanpham div p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
